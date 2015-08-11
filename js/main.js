@@ -186,6 +186,15 @@ $(function(){
 		}
 		
 	});
+	$('.semiParent li').click(function(){
 
+			var item=$(this).children().html();
+			$('.body h3').html('Contact '+item);
+	});
+	$('#mainContact').click(function(){
+		$('#sideNav').hide();
+
+		$('#mainContact').css('width','95%');
+	});
 });	
 	
