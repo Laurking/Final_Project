@@ -1,0 +1,563 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     padding: 0px;
+     margin: 0px;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body{
+	width: 100%;
+	font-size: 12px;
+	font-family: Arial;
+	padding: 1px;
+}
+header{
+	width: 100%;
+	color: white;
+	background-color: #155B91;
+
+}
+
+.desktop{
+	display: none;
+}
+
+
+.big_nav{
+	width: 100%;
+	height: 85px;
+}
+header .big_nav section{
+	float: left;
+	border-left: 2px solid #53AEF3;
+	border-right: 2px solid #15448D;
+	border-bottom: 2px solid #15448D;
+	
+}
+#logo{
+	width: 15%;
+	height: 100%;
+	padding: 0px;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+}
+#header{
+	width: 55%;
+	height: 100%;
+	text-align: center;
+	color: red;
+	font-size: 2em;
+	padding-top: .3em;
+}
+#header h3{
+	padding-top: 1em;
+	font-size: .7em;
+}
+#connect{
+	width: 30%;
+	height: 100%;
+	padding: 0px;
+	padding-top: 2em;
+	font-size: 1.2em;
+	text-align: center;
+
+}
+#connect ul li{
+	width: 50%;
+	list-style-type: none;
+	float: left;
+	height: 100%;
+	text-align: center;
+}
+#connect a{
+	padding: .7em 2px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid #53AEF3;
+}
+.mobile{
+	width: 100%;
+	height: 55px;
+	border-top: 2px solid #53AEF3;
+	background-color: #155B91;
+}
+.mobile #menu_icon{
+	height: 100%;
+	text-align: center;
+	font-size: 3em;
+	float: left;
+	padding: .1em;
+}
+.mobile form{
+	width: 65%;
+	height: 100%;
+	text-align: center;
+	float: left;
+	padding-top: 1.2em;
+	
+}
+.mobile form input{
+	width: 90%;
+	font-size: 1.5em;
+}
+.mobile #location{
+	width: 24.5%;
+	height: 70%;
+	margin-top: .7em;
+	float: left;
+	border-left: 2px solid #53AEF3;
+
+}
+.mobile #location{
+	width: 24.5%;
+	height: 70%;
+	margin-top: .7em;
+	float: left;
+	border-left: 2px solid #53AEF3;
+
+}
+.mobile #location ul{
+	width: 100%;
+	height: 100%;
+}
+.mobile #location ul li{
+	width: 50%;
+	height: 100%;
+	float: left;
+	list-style-type: none;
+	padding: .6em;
+	padding-left: .7em;
+}
+.mobile #location ul li a img{
+	width: 100%;
+	height: 100%;
+	
+}
+.small_nav{
+	clear: both;
+	font-size: 1.2em;
+	position: absolute;
+	display: none;
+}
+.small_nav ul li a{
+	padding:1em 1.5em;
+	display: block;
+	color: white;
+	border-top: 1px solid white;
+	background: black;
+	text-decoration: none;
+	
+}
+.small_nav ul li a:hover{
+	background: white;
+	color: black;
+}
+
+/*
+This part deals with the body and the layouts 
+that it contains.
+*/
+/*.mainBoard {
+	display: none;
+}*/
+.programs .language a{
+	display: none;
+}
+
+.programs .language h3{
+	width: 100%;
+	padding: .5em;
+	text-align: center;
+	cursor: pointer;
+	border:2px solid white;
+	background-color: green;
+}
+.mobileBoard{
+	width: 100%;
+	padding: 0px;
+}
+
+.main{
+	width: 100%;
+	padding: 1em;
+	padding-bottom: 0px;
+	color: white;
+	text-align: center;
+	border: .5em solid white;
+	border-bottom: 0px;
+	background-color:black ;
+
+}
+.main .imageBoard{
+	width: 100%;
+	height: 100%;
+	padding: 0em;
+	background-color: white;
+}
+.main .controlls{
+	width: inherit;
+	padding: .1em;
+	position: absolute;
+	color: black;
+	display: none;
+	text-align: center;
+	background-color: rgba(255,255,255,0.9);
+}
+.main .controlls h3{
+	display: inline;
+	font-size: 1.6em;
+	padding: .3em;
+	cursor: pointer;
+}
+.main:hover .controlls{
+	display: block;
+}
+.main .infoBar{
+	background: blue;
+	color: white;
+}
+.main .appleLogo{
+	width: 100%;
+	background-color: black;
+}
+.main .appleLogo h3{
+	padding: .6em;
+}
+main .first{
+	width: 10%;
+	background-color: black;
+	padding: 1em;
+	border-top: 1px solid white;
+	margin-left: 45%;
+
+}
+main .second{
+	width: 30%;
+	background-color: black;
+	padding: .7em;
+	margin-left: 35%;
+}
+aside h3{
+	display: none;
+}
+.listSlide{
+	display: none;
+}
+.languageBarStyling{
+
+}
+
+.learn{
+		width: 100%;
+		clear: both;
+		height: 100px;
+		padding:0px;
+		background-color:black;
+}
+.learn section{
+	width: 33.33%;
+	padding: .2em;	
+	font-size: 1em;
+	float: left;
+	text-align: center;
+	border:2px solid white;
+	background-color: green;
+}
+.learn section:nth-child(1){
+	background-color: orange;
+}
+.learn section:nth-child(3){
+	background-color: yellow;
+}
+.learn section h3{
+	padding: 1em;
+}
+
+
+
+
+
+
+/*
+Login page and behavior
+*/
+
+
+/*Styling the footer
+*/
+
+footer{
+	width: 100%;
+	padding: 0px;
+}
+footer section{
+	width: 50%;
+	float: left;
+	padding: .2em;
+	background-color: white;
+}
+footer section h2{
+	width: 100%;
+	padding: .1em;
+	text-align: center;
+	background: #444;
+}
+footer section h3{
+	padding: .3em;
+	padding-left: .7em;
+}
+footer section h3 a{
+		text-decoration: none;
+		color: black;
+}
+
+footer section h3 a:hover{
+		color: #0D0;
+		text-decoration: underline;
+}
+
+
+
+
+
+.social{
+	width: 100%;
+	padding: .5em;
+	text-align: center;
+	background-color: black;
+	color: white;
+	
+}
+.social a{
+	color: white;
+	text-decoration: none;
+	font-size: 1em;
+	padding: .5em;
+
+}
+
+.active{
+	display: none;
+}
+@media only screen and (min-width:768px){
+	.desktop{
+		display: block;
+	}
+	.mobile,.mobileBoard{
+		display: none;
+	}
+	.big_nav section{
+		height:100%;
+		
+	}
+	 .big_nav #logo{
+		width: 20%;
+		height:100%;
+	}
+	#logo img{
+		width: 100%;
+		height:100%;
+	}
+	.big_nav #header{
+		width: 50%;
+		height: 100%;
+		padding: 0px;
+		padding-top: .2em;
+	}
+	.big_nav #header h1,.big_nav #header h3{
+		padding: 0px;
+	} 
+	.big_nav #header h3{
+		font-size: .6em;
+		padding: 0px;
+		padding-right: 1em;
+		text-align: right;
+	}
+	.big_nav #header form{
+		width: 100%;
+		text-align: left;
+		padding-left: .3em;
+	} 
+	.big_nav #header form input{
+		width: 80%;
+		font-size: .7em;
+	}
+	.big_nav #header form  button{
+		width: 18%;
+		font-size: .8em;
+		font-weight: bolder;
+	}
+	.big_nav #location{
+		width: 10%;
+		height: 100%;
+		text-align: center;
+		padding:.5em;
+	}
+	.big_nav #connect{
+		width: 20%;
+		height: 100%;
+		padding-top: 2.5em;
+	}
+	.big_nav #connect a{
+		padding: 1.5em .7em;
+	}
+	.small_nav{
+		position: static;
+		display: block;
+	}
+	.small_nav ul li{
+		width: 16.66%;
+		float: left;
+		text-align: center;
+		border-left: 1px solid #53AEF3;
+		border-right: 1px solid #15448D;
+		list-style-type: none;
+	}
+	.small_nav ul li a{
+		font-weight: bolder;
+	}
+
+	aside{
+		width: 10%;
+		height: 37em;
+		padding: .1em;
+		border:1px solid white;
+		color: white;
+		text-align: center;
+		background-color: black;
+		float: left;
+	}
+	aside h3{
+		padding: 2em .3em;
+		font-size: 4em;
+		display: block;
+		background-color: white;
+		color: black;
+	}
+	.listSlide{
+		width: 100%;
+		height: 2.7em;
+		clear: both;
+		display: block;
+		text-align: center;
+		padding: .1em;
+		padding-left: 41%;
+		background-color:black; 
+	}
+	.listSlide ul li{
+		list-style-type: none;
+		width: 3%;
+		padding: .9em;
+		border: 4px solid black;
+		float: left;
+		margin-left: .2em;
+		border-radius: 100%;
+	}
+
+	.mainBoard,.programs{
+		width: 100%;
+		padding:.1em;
+		height: 37em;
+		float: left;
+		display: block;
+		border:2px solid white;
+		background-color: red;
+	}
+	.programs{
+		display: none;
+		background-color: white;
+	}
+	
+	.mainBoard h3{
+		width: 5em;
+		text-align: center;
+		border-radius: 10px;
+		text-shadow: 0.1em 0.1em 0.2em white;
+		font-size: 3em;
+		color:green;
+		cursor: pointer;
+		background-color:Lime;
+		margin-top: 9em;
+		margin-left: 1em;
+		padding: .2em;
+	}
+	
+	.slideBar:hover .programs{
+		width: 80%;
+	}
+	.slideBar:hover .mainBoard{
+		width: 80%;
+	}
+	
+	.programs section{
+		width: 25%;
+		padding: .5em;
+		float: left;
+	}
+	.programs section h3{
+		width: 100%;
+		padding: .1em;
+		color: white;
+		background-color: black;
+		text-align: center;
+	}
+	.learn{
+		clear: both;
+		width: 100%;
+		height: 17.5em;
+
+	}
+	.learn section h3{
+		font-size: 2em;
+		padding: 3em 1em;
+	}
+	footer{
+		clear: both;
+	}
+
+	footer nav.social a{
+		font-size: 1.5em;
+	}
+
+	footer section{
+		width: 33.33%;
+	}
+	
+
+.current{
+	background-color: white;
+	color: black;
+}
+.active{
+	display: none;
+}
+
+}

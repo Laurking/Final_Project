@@ -1,0 +1,108 @@
+ * {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     padding: 0px;
+     margin: 0px;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body{
+	width: 100%;
+	font-size: 10px;
+	font-family: Arial;
+	padding: 0px;
+}
+header{
+     margin-top: -1.4em;
+     float: left;
+}
+header #sideMenu{
+     width: 5px;
+     word-wrap:break-word;
+     padding: 9.8em .5em;
+     padding-right: 1em;
+     font-size: 3em;
+     margin-top: -2.5em;
+     cursor: pointer;
+     background-color: red;
+     color: white;
+     font-weight: bolder;
+     float: left;
+
+}
+header #sideNav{
+     font-size: 1.5em;
+     padding-left: .1em;
+     float: left;
+     background-color: red;
+     color: white;
+     border-bottom: .96em solid red;
+}
+header #sideNav h1{
+     padding-left: 1em;
+     background-color: red;
+}
+.listParent{
+     margin-left: -1.4em;
+     padding: 2.4em 1em;
+     cursor: pointer;
+     padding-right: 2.5em;
+     background-color: black;
+     border-bottom: 2px solid white;
+}
+.listParent a{
+     text-decoration: none;
+     color: white;
+}
+.listParent:hover .semiParent{
+     display: block;
+     position: absolute;
+     background-color: black;
+     color: black;
+     margin-left: 12em;
+     margin-top: -3.5em;
+}
+.semiParent{
+     display: none;
+}
+.semiParent li{
+     padding: 1em .5em;
+}
+.listParent:hover .last{
+     margin-top: -10em;
+     background-color: red;
+}
+.semiParent li a{
+     color: white;
+}
+
+#mainContact{
+     width: 60%;
+     margin-left:.1em;
+     border: 2px solid black;
+     float: left;
+}

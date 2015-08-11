@@ -1,0 +1,101 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+     width: 70%;
+}
+
+.alignright {
+	float: right; 
+}
+
+.alignleft {
+     float: left;
+     
+}
+
+div {
+     position
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #fff;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     padding: 5px;
+     background-color: blue;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+.parent{
+     width: 80%;
+     text-align: right;
+     margin-left: 5%;
+     padding: 0px;
+     height: 20px;
+     color: white;
+     float: left;
+     border:1px solid #84cc1e;
+     background-color: #84cc1e;
+}
+.child{
+     width: 0%;
+     padding: 1px;
+     margin: 0px;
+     background-color: #4ab558;
+     position: absolute;
+}
+.child h3{
+     padding-right: 2px;
+}
+ul{
+     width: 76%;
+     padding: 5px;
+     height: 35px;
+     margin-top: 5%;
+     margin-left: 10%;
+    
+}
+li{
+     float: left;
+     width: 2%;
+     margin-left: 1%;
+     border:1px solid black;
+     padding: 4px;
+     background-color: red;
+}
