@@ -5,7 +5,7 @@ $(function(){
 
 	var languages=['java.jpg','python.png','ruby.png','javascript.png','jquery.jpg','objectivec.png','php.png','swift.png'];
 
-	var images=['image1','image2','image3','image4','image5','image7','image6'];
+	var images=['image1','image2','image3','image4','image5','image6','image7'];
 
 	var count=0;
 
