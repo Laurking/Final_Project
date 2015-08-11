@@ -177,10 +177,15 @@ $(function(){
 	
 	$('#sideMenu').click(function(){
 		$('#sideNav').toggle();
+		var status=$('#sideNav').css('display');
+		if (status=='none') {
+			$('#mainContact').css('width','95%');
+		}
+		else{
+			$('#mainContact').css('width','78%');
+		}
 		
 	});
-
-
 
 });	
 	
