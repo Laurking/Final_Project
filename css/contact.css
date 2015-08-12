@@ -68,7 +68,7 @@ header #menuBar{
      display: none;
 }
 .listParent{
-     width: 13%;
+     width: 12.5%;
      text-align: center;
      padding:1em .5em;
      border: 1px solid white;
@@ -79,8 +79,11 @@ header #menuBar{
      text-decoration: none;
      color: white;
 }
-.longName{
-     width: 22.5%;
+.jobAndInternship{
+     width: 23.5%;
+}
+#coderHouse{
+     width: 23%;
 }
 .short{
      width: 15.9%;
@@ -96,15 +99,19 @@ header #menuBar{
 .last{
      margin-left: -6em;
 }
-.hoverClass{
-     background-color: white;
-     color: black;
+.listParent:hover .semiParent{
+     display: block;
 }
-
 .semiParent li{
+     cursor: pointer;
      padding: 1.5em 2em;
 }
-
+.semiParent li:hover{
+     background-color: white;
+}
+.semiParent li:hover a{
+     color: black
+}
 #mainContact{
      clear: both;
 }
@@ -142,7 +149,7 @@ th:nth-child(even){
      text-align: left;
 }
 table input{
-     font-size: 1em;
+     font-size: .9em;
 }
 span{
      color: red;
@@ -151,6 +158,8 @@ span{
 
 .body textarea{
      width: 60%;
+     font-size: 1em;
+     font-family: Times New Roman;
      height: 10em;
      margin-left: 20%;
 }

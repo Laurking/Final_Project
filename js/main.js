@@ -28,7 +28,7 @@ $(function(){
 	
 
 	setInterval(function(){
-		dispalyMobileImage();
+		displayMobileImage();
 	},20000);
 
 	$(window).resize(function(){
@@ -69,7 +69,7 @@ $(function(){
 //This part deals with the window size greater than 768px
 ////////////////////////////////////////////////////////////////////
 
-//This method dispaly the previous image slide and list item 
+//This method display the previous image slide and list item 
 // at index number count;
 	function displayPreviousImage(){
 
@@ -88,7 +88,7 @@ $(function(){
 
 	}
 
-//This method dispaly the next image slide and list item 
+//This method display the next image slide and list item 
 // at index number count;
 
 	function displayNextImage(){
@@ -109,7 +109,7 @@ $(function(){
 ////////////////////////////////////////////////////////////////////
 //This part deals with the window size lass than or equal to 768px
 ////////////////////////////////////////////////////////////////////
-	function dispalyMobileImage(){
+	function displayMobileImage(){
 		if (count<languages.length-1) {
 			count+=1;
 			
@@ -174,26 +174,24 @@ $(function(){
 		}
 	});
 	
-	$('#sideMenu').click(function(){
-		$('#sideNav').toggle();
-		var status=$('#sideNav').css('display');
+	$('#menuBar').click(function(){
+		var status=$('#navigation').css('display');
 		if (status=='none') {
-			$('#mainContact').css('width','95%');
+			$('#navigation').slideDown('fast');
 		}
 		else{
-			$('#mainContact').css('width','78%');
+			$('#navigation').slideUp('fast');
 		}
 		
 	});
-	$('.semiParent li').click(function(){
 
+	$('#mainContact').click(function(){
+		$('#navigation').hide();
+	});
+
+	$('.semiParent li').click(function(){
 			var item=$(this).children().html();
 			$('.body h3').html('Contact '+item);
-	});
-	$('#mainContact').click(function(){
-		$('#sideNav').hide();
-
-		$('#mainContact').css('width','95%');
 	});
 });	
 	
