@@ -11,7 +11,7 @@ $(function(){
 
 	var mainWidth=$('.main').width();
 
-	var windowWidth=$(window).width();
+	var windowWidth=$(window).width();	
 
 	$('.controlls').css('width',mainWidth);
 

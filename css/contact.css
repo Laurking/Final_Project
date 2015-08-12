@@ -112,9 +112,7 @@ header #menuBar{
 .semiParent li:hover a{
      color: black
 }
-#mainContact{
-     clear: both;
-}
+
 #mainContact .header{
      width: 100%;
      font-size: 1.5em;
@@ -210,7 +208,59 @@ footer section{
           width: 220px;
      }
 }
-@media only screen and(min-width:768px){
+@media only screen and (min-width:867px){
+     *{
+          padding: 0px;
+          margin: 0px;
+     }
+     .mobile{
+          display: none;
+     }
+     .desktop{
+          display: block;
+     }
+      header{
+         float: left; 
+         background-color: red;
+     }
+     #navigation{
+          width:80%;
+          padding-left:1em;
+          float: left;
+          display: block;
+     }
+     #navigation .listParent{
+          clear: both;
+          width: 100%;
+     }
 
-     
+     header #menuBar{
+          width: 10%;
+          font-size: 1.5em;
+          padding: 18.2em 1em;
+          padding-right: 1.5em;
+          word-wrap:break-word;
+          float: left;
+          background-color: purple;
+
+     }
+     .listParent{
+          padding: 2.8em .5em;
+          text-align: left;
+     }
+
+     #mainContact{
+          width: 70%;
+          float: left;
+          border-left:50px solid white;
+          border-right:50px solid white;
+
+     }
+     #mainContact textarea{
+          height: 12em;
+     }
+     footer{
+          clear: both;
+     }
+
 }
