@@ -535,6 +535,10 @@ footer section h3 a:hover{
 		height: 17.5em;
 
 	}
+	.learn section:hover{
+		background-color: #FF00FF;
+		cursor: pointer;
+	}
 	.learn section h3{
 		font-size: 2em;
 		padding: 3em 1em;

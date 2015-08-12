@@ -29,7 +29,7 @@ $(function(){
 
 	setInterval(function(){
 		dispalyMobileImage();
-	},10000);
+	},20000);
 
 	$(window).resize(function(){
 
@@ -145,10 +145,9 @@ $(function(){
 
 		switch(program){
 			case 'python':
-				return 'Hi, my name is Python and I was created Van...';
+				return 'Hi, Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Take a look on our website.';
 			case 'ruby':
 				return 'I am Ruby, I help develop web apps. I am a great tool for whatever your want. Learn me now';
-
 			case 'javascript':
 				return 'Hello, my name is Javascript. I am a very good language for you to begin. Start Now!!';
 			case 'java':
