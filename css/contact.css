@@ -180,6 +180,9 @@ span{
      background-color: lime;
 
 }
+.required{
+     display: none;
+}
 
 footer section{
      width: 100%;

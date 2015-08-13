@@ -156,6 +156,5 @@ $(function(){
 			var item=$(this).children().html();
 			$('.body h3').html('Contact '+item);
 	});
-	
 
 });
