@@ -11,10 +11,9 @@ $(function(){
 
 	var languageCounter=0;
 
-	$('.menu_icon').click(function(){
-
+	$('#menu_icon').click(function(){
 		$('.small_nav').slideToggle('fast');
-
+		$('marquee').toggle();
 	});
 
 	setInterval(function(){
