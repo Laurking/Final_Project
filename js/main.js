@@ -15,7 +15,7 @@ $(function(){
 
 	$('.controlls').css('width',mainWidth);
 
-	$('#menu_icon').click(function(){
+	$('.menu_icon').click(function(){
 
 		$('.small_nav').slideToggle('fast');
 		$('.controlls').toggleClass('active');
@@ -186,6 +186,14 @@ $(function(){
 			return true;
 		}
 	}
+	function valueCheck(value){
+		if (value==NaN || value.length==0) {
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
 	
 	$('#menuBar').click(function(){
 		var status=$('#navigation').css('display');
@@ -206,5 +214,15 @@ $(function(){
 			var item=$(this).children().html();
 			$('.body h3').html('Contact '+item);
 	});
+	$('#SubmitRegistration').click(function(){
+		var firstname=$('input[name="firstname"]').val();
+		var middlename=$('input[name="middlename"]').val();
+		var lastname=$('input[name="lastname"]').val();
+		if (valueCheck(firstname)==true && valueCheck(middlename)==true && valueCheck(lastname)==true) {
+			window.location="welcome.html";
+			$('#post').html("");
+		}
+	})
+
 });	
 	
