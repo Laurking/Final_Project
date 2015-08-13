@@ -53,8 +53,12 @@ $(function(){
 	});
 
 	$('.slideBar').hover(function(){
-
 		$('.active').toggle()
+		var status=$('.programs').css('display');
+		if (statusCheck(status)==true) {
+			$('aside').toggle();
+			$('.programs').css('width','100%')
+		}
 
 	});
 

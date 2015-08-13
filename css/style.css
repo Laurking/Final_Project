@@ -271,15 +271,13 @@ aside h3{
 .listSlide{
 	display: none;
 }
-.languageBarStyling{
-
-}
 
 .learn{
 		width: 100%;
 		clear: both;
 		height: 100px;
 		padding:0px;
+		margin-top: 1.5em;
 		background-color:black;
 }
 .learn section{
