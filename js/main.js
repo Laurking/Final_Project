@@ -173,14 +173,23 @@ $(function(){
 			$('.mainBoard').hide();
 		}
 	});
+
+	function statusCheck(status){
+		if (status=='none') {
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
 	
 	$('#menuBar').click(function(){
 		var status=$('#navigation').css('display');
-		if (status=='none') {
-			$('#navigation').slideDown('fast');
+		if (statusCheck(status)==true) {
+			$('#navigation').slideUp();
 		}
 		else{
-			$('#navigation').slideUp('fast');
+			$('#navigation').slideDown();
 		}
 		
 	});

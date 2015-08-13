@@ -180,10 +180,28 @@ span{
      background-color: lime;
 
 }
+
 footer section{
+     width: 100%;
      font-size: 1.5em;
      background-color: #444;
-     padding: .5em;
+     padding: .5em
+}
+footer section h4{
+     width: 50%;
+     margin-right: 10px;
+     height: 4em;
+     display: inline;
+}
+footer section h4:last-of-type{
+     text-align: right;
+     margin-right: .5em;
+}
+footer section h4:last-of-type a{
+     padding: .2em 1em;
+     background-color: green;
+     color: white;
+     text-decoration: none;
 }
 @media screen and (min-width: 400px) and (max-width: 767px) { 
      .required{
@@ -209,10 +227,6 @@ footer section{
      }
 }
 @media only screen and (min-width:867px){
-     *{
-          padding: 0px;
-          margin: 0px;
-     }
      .mobile{
           display: none;
      }
@@ -227,7 +241,7 @@ footer section{
           width:80%;
           padding-left:1em;
           float: left;
-          display: block;
+          display: none;
      }
      #navigation .listParent{
           clear: both;
@@ -248,19 +262,38 @@ footer section{
           padding: 2.8em .5em;
           text-align: left;
      }
-
+     .semiParent{
+          margin-top: -4em;
+          margin-left: 11.2em;
+     }
+     .last{
+          margin-top: -11em;
+     }
      #mainContact{
           width: 70%;
           float: left;
-          border-left:50px solid white;
-          border-right:50px solid white;
+          margin-left: 4%;
+          border: 5px solid white;
 
      }
      #mainContact textarea{
-          height: 12em;
+          height: 11.7em;
+          background-color: #B8FBF4;
      }
+     table{
+          background-color: khaki;
+     }
+     .header h2{
+          padding:.5em 0px;
+     }
+
      footer{
+          color: white;
           clear: both;
+     }
+     
+
+
      }
 
 }
