@@ -28,7 +28,7 @@ $(function(){
 		if (getWindowWidth>767){
 			$('.small_nav').show('fast');
 		}
-	
+
 	});
 
 
@@ -56,7 +56,7 @@ $(function(){
 
 	function displayNextImage(){
 		if (count<images.length-1) {
-				count+=1;
+			count+=1;
 		}
 		else if (count>=images.length-1) {
 			count=0;
@@ -67,93 +67,89 @@ $(function(){
 		var listItem=$('.listSlide li')[count];
 		$(listItem).css('background-color','green');
 		$(listItem).siblings().css('background-color','white');
+
 	}
 
-	function displayMobileImage(){
-		if (languageCounter<languages.length-1) {
-			languageCounter+=1;
-			
-		}
-		else if (languageCounter>=languages.length-1){
-			languageCounter=0;
-		}
-		var src='../img/'+languages[languageCounter];
-		var text=marqueeText(languages[languageCounter]);
-		$('.infoBar marquee h2').html(text);
-		$('.mobileBoard .main .imageBoard img').attr('src',src);		
-		
-	}
 
-	function getLastPeriodIndex(string){
-		var index;
-		for (var i = string.length - 1; i >= 0; i--) {
-			if (string.charAt(i)=='.') {
-				index=i;
+		function displayMobileImage(){
+			if (languageCounter<languages.length-1) {
+				languageCounter+=1;
+
+			}
+			else if (languageCounter>=languages.length-1){
+				languageCounter=0;
+			}
+			var src='../img/'+languages[languageCounter];
+			var text=marqueeText(languages[languageCounter]);
+			$('.infoBar marquee h2').html(text);
+			$('.mobileBoard .main .imageBoard img').attr('src',src);		
+
+		}
+
+		function getLastPeriodIndex(string){
+			var index;
+			for (var i = string.length - 1; i >= 0; i--) {
+				if (string.charAt(i)=='.') {
+					index=i;
+				}
+
+			}
+			return index;
+		}
+
+		function language(string){
+			var text=string.substring(0,getLastPeriodIndex(string));
+			return text;
+		}
+		function marqueeText(string){
+
+			var program=language(string)
+
+			switch(program){
+				case 'python':
+					return 'Hi, Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Take a look on our website.';
+				case 'ruby':
+					return 'I am Ruby, I help develop web apps. I am a great tool for whatever your want. Learn me now';
+				case 'javascript':
+					return 'Hello, my name is Javascript. I am a very good language for you to begin. Start Now!!';
+				case 'java':
+					return 'Hey there! I am Java, the only android development tool. Learn about me, and I\'ll empower you. Start Now!';
+				default:
+					return '';
 			}
 
 		}
-		return index;
-	}
 
-	function language(string){
-		var text=string.substring(0,getLastPeriodIndex(string));
-		return text;
-	}
-	function marqueeText(string){
-
-		var program=language(string)
-
-		switch(program){
-			case 'python':
-				return 'Hi, Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Take a look on our website.';
-			case 'ruby':
-				return 'I am Ruby, I help develop web apps. I am a great tool for whatever your want. Learn me now';
-			case 'javascript':
-				return 'Hello, my name is Javascript. I am a very good language for you to begin. Start Now!!';
-			case 'java':
-				return 'Hey there! I am Java, the only android development tool. Learn about me, and I\'ll empower you. Start Now!';
-			default:
-				return '';
+		function statusCheck(status){
+			if (status=='none') {
+				return false;
+			}
+			else{
+				return true;
+			}
 		}
 
+		$('#menuBar').click(function(){
+			var status=$('#navigation').css('display');
+			if (statusCheck(status)==true) {
+				$('#navigation').slideUp();
+			}
+			else{
+				$('#navigation').slideDown();
+			}
 
-	}
+		});
 
-	function statusCheck(status){
-		if (status=='none') {
-			return false;
-		}
-		else{
-			return true;
-		}
-	}
-	function valueCheck(value){
-		if (value==NaN || value.length==0) {
-			return false;
-		}
-		else{
-			return true;
-		}
-	}
-	
-	$('#menuBar').click(function(){
-		var status=$('#navigation').css('display');
-		if (statusCheck(status)==true) {
-			$('#navigation').slideUp();
-		}
-		else{
-			$('#navigation').slideDown();
-		}
-		
+		$('.semiParent li').click(function(){
+
+			var item=$(this).children('a').html();
+			$('#mainContact .body h3').html('Contact '+item);
+
+		});
+
+		$('#mainContact').click(function(){
+			$('#navigation').hide();
+		});
+
+
 	});
-
-	$('#mainContact').click(function(){
-		$('#navigation').hide();
-	});
-
-	$('.semiParent li').click(function(){
-			var item=$(this).children().html();
-			$('.body h3').html('Contact '+item);
-	});
-
-});
